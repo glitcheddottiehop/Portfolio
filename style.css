@@ -3,7 +3,7 @@ html {
   width: 100%;
   height: 100%;
   font-family: 'Montserrat', sans-serif;
-  background: url(header.jpg) no-repeat center center fixed; 
+  background: url(./img/bg1.svg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -12,6 +12,10 @@ html {
 
 h1 {
   color: #dcc6e0;
+}
+
+.blockquote-footer {
+  font-size: 1.25rem;
 }
 
 .find-out-more {
@@ -25,18 +29,19 @@ h1 {
   border-color: #006c82;
 }
 
-.buffer {
-  height: 14rem;
-}
-
 hr {
+  border: 3px solid #C402BB;
   margin: 20px auto;
   color: #F05F44;
-  border: 3px solid #F05F44;
   max-width: 65px;
   opacity: 1;  
 }
 
 .blockquote-footer {
   color: #0dcaf0;
+}
+
+.animate__animated.animate__bounce {
+  --animate-duration: 2s;
+  animation-delay: var(--animate-delay, 1s); ;
 }
