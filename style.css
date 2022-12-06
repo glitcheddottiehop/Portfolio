@@ -14,6 +14,10 @@ h1 {
   color: #dcc6e0;
 }
 
+.blockquote-footer {
+  font-size: 1.25rem;
+}
+
 .find-out-more {
   padding: 1rem;
   border-radius: 50px;
@@ -26,9 +30,9 @@ h1 {
 }
 
 hr {
+  border: 3px solid #C402BB;
   margin: 20px auto;
   color: #F05F44;
-  border: 3px solid #F05F44;
   max-width: 65px;
   opacity: 1;  
 }
