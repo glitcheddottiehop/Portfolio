@@ -10,6 +10,10 @@ html {
   background-size: cover;
 }
 
+.navbar {
+  font-size: 1.5rem;
+}
+
 h1 {
   color: #dcc6e0;
 }
@@ -25,8 +29,8 @@ h1 {
 }
 
 .btn-info:hover {
-  background-color: #006c82;
-  border-color: #006c82;
+  background-color: #b3e5fc;
+  border-color: #b3e5fc;
 }
 
 hr {
