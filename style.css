@@ -47,5 +47,22 @@ hr {
 
 .animate__animated.animate__bounce {
   --animate-duration: 2s;
-  animation-delay: var(--animate-delay, 1s); ;
+.animate__animated.animate__backInLeft {
+  --animate-duration: 1s;
+  animation-delay: var(--animate-delay, 1s);
+}
+
+.content-wrapper {
+  margin-top: 10rem;
+}
+
+.about-me {
+  background-color: #f9a5fd;
+  box-shadow: 0px 12px 8px rgba(0, 0, 0, 0.25);
+}
+
+@media all and (min-width: 62rem) {
+  .content-wrapper {
+      margin-top: 15rem;
+    }
 }
