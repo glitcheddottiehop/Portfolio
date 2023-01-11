@@ -98,6 +98,10 @@ hr {
   margin-top: 15rem;
 }
 
+.heading-spacer {
+  padding-bottom: 5rem;
+}
+
 @media all and (min-width: 48rem) {
   .image-container {
       max-width: unset;

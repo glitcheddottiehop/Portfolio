@@ -1,0 +1,71 @@
+{
+  "name": "@rehaps/rehaps-web-components",
+  "version": "0.6.2",
+  "description": "Rehaps web components",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/components.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/rehaps-web-components/rehaps-web-components.esm.js",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/rehaps/web/Rehaps-web-components.git"
+  },
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "build": "stencil build --docs",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e --ci --all --coverage",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate",
+    "storybook": "export NODE_OPTIONS=--openssl-legacy-provider&&start-storybook -p 6006 -h localhost --quiet",
+    "build-storybook": "export NODE_OPTIONS=--openssl-legacy-provider&&build-storybook --quiet",
+    "stencil-storybook": "export NODE_OPTIONS=--openssl-legacy-provider&&concurrently --kill-others \"npm run start\" \"npm run storybook\"",
+    "storybook-win": "set NODE_OPTIONS=--openssl-legacy-provider&&start-storybook -p 6006 -h localhost --quiet",
+    "build-storybook-win": "set NODE_OPTIONS=--openssl-legacy-provider&&build-storybook --quiet",
+    "stencil-storybook-win": "set NODE_OPTIONS=--openssl-legacy-provider&&concurrently --kill-others \"npm run start\" \"npm run storybook-win\""
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.2",
+    "@fortawesome/free-solid-svg-icons": "^6.1.2",
+    "@stencil/core": "^2.17.3",
+    "@storybook/addon-controls": "^6.5.10",
+    "jest-junit": "^14.0.0"
+  },
+  "jestSonar": {
+    "reportPath": "coverage/reports",
+    "reportFile": "test-report.xml"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@stencil/sass": "^1.5.2",
+    "@storybook/addon-actions": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-links": "^6.5.10",
+    "@storybook/addon-notes": "^5.3.21",
+    "@storybook/html": "^6.5.10",
+    "@types/jest": "^27.0.3",
+    "babel-loader": "^8.2.4",
+    "concurrently": "^7.5.0",
+    "jest": "^27.4.5",
+    "jest-cli": "^27.4.5",
+    "jest-sonar-reporter": "^2.0.0",
+    "puppeteer": "^13.7.0",
+    "typescript": "^4.9.3"
+  },
+  "overrides": {
+    "trim-newlines": "^4.0.1",
+    "trim": "^0.0.3",
+    "glob-parent": "^5.1.2",
+    "refractor": "^4.7.0",
+    "lowlight": "^2.7.0",
+    "react-syntax-highlighter": "^15.5.0"
+  },
+  "license": "MIT"
+}
