@@ -3,7 +3,7 @@ html {
   width: 100%;
   height: 100%;
   font-family: 'Montserrat', sans-serif;
-  background: url(./img/bg1.svg) no-repeat center center fixed; 
+  background: url(./img/bg1.svg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -16,6 +16,19 @@ html {
 
 h1 {
   color: #dcc6e0;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+a:hover {
+  color: unset;
+}
+
+p {
+  color: white;
 }
 
 .blockquote-footer {
@@ -38,7 +51,7 @@ hr {
   margin: 20px auto;
   color: #F05F44;
   max-width: 65px;
-  opacity: 1;  
+  opacity: 1;
 }
 
 .blockquote-footer {
@@ -66,8 +79,45 @@ hr {
   box-shadow: 0px 12px 8px rgba(0, 0, 0, 0.5);
 }
 
+.image-container {
+  max-width: 22.5rem;
+  gap: var(--bs-gutter-x);
+}
+
+.image-container a {
+  transform: scale(1);
+  transition: transform 1s;
+}
+
+.image-container a:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.image-container a:hover .image {
+  backdrop-filter: blur(2px);
+}
+
+.image {
+  width: 100%;
+}
+
+.content-spacer {
+  margin-top: 15rem;
+}
+
+.heading-spacer {
+  padding-bottom: 5rem;
+}
+
+@media all and (min-width: 48rem) {
+  .image-container {
+      max-width: unset;
+    }
+}
+
 @media all and (min-width: 62rem) {
   .content-wrapper {
-      margin-top: 15rem;
-    }
+    margin-top: 15rem;
+  }
 }
