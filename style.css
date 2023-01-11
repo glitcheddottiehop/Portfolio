@@ -110,6 +110,19 @@ hr {
   padding-bottom: 5rem;
 }
 
+.contacts-container p {
+  font-size: 1rem;
+  margin-bottom: unset;
+}
+
+.email, .social-links {
+  border-bottom: 1px solid #8010AE;
+}
+
+.email {
+  column-gap: 1rem;
+}
+
 @media all and (min-width: 48rem) {
   .image-container {
       max-width: unset;
