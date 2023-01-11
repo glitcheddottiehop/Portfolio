@@ -84,10 +84,18 @@ hr {
   gap: var(--bs-gutter-x);
 }
 
+.image-container a {
+  transform: scale(1);
+  transition: transform 1s;
+}
+
 .image-container a:hover {
-  animation-name: zoomIn;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.image-container a:hover .image {
+  backdrop-filter: blur(2px);
 }
 
 .image {
@@ -111,15 +119,5 @@ hr {
 @media all and (min-width: 62rem) {
   .content-wrapper {
     margin-top: 15rem;
-  }
-}
-
-@keyframes zoomIn {
-  0% {
-    transform: scale(1);
-  }
-
-  100% {
-    transform: scale(1.2);
   }
 }
