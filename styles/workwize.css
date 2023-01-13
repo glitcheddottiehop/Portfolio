@@ -1,0 +1,47 @@
+h2 {
+    margin-top: unset;
+}
+
+.properties {
+    margin: 0 auto;
+}
+
+.page-title {
+    color: #06CF64;
+}
+
+.content-limiter {
+    max-width: 900px;
+    margin: 0 auto
+}
+
+.heading-spacer-top {
+    padding-top: 5rem;
+}
+
+.accordion {
+    position: fixed;
+    top: 4rem;
+}
+
+.prototype-text {
+    display: none;
+}
+
+@media all and (max-width: 30rem) {
+    iframe {
+        display: none;
+    }
+
+    .prototype-text {
+        display: block;
+    }
+}
+
+@media all and (max-width: 37.5rem) {
+    .column-list {
+        display: block;
+    }
+}
+
+
