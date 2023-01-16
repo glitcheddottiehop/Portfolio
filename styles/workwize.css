@@ -1,3 +1,23 @@
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background:  linear-gradient(0deg, rgb(217, 0, 255) 0%, rgb(255, 233, 108) 50%, rgb(78, 72, 255) 100%);
+}
+
+body {
+  overflow: overlay;
+}
+
 h2 {
     margin-top: unset;
 }
