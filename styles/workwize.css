@@ -28,7 +28,13 @@ h2 {
     display: none;
 }
 
-@media all and (max-width: 30rem) {
+@media all and (max-width: 37.5rem) {
+    .column-list {
+        display: block;
+    }
+}
+
+@media all and (max-width: 43.75rem) {
     iframe {
         display: none;
     }
@@ -37,11 +43,3 @@ h2 {
         display: block;
     }
 }
-
-@media all and (max-width: 37.5rem) {
-    .column-list {
-        display: block;
-    }
-}
-
-
