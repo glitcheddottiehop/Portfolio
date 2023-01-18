@@ -100,8 +100,8 @@ hr {
 }
 
 .image-container {
-  max-width: 22.5rem;
-  gap: var(--bs-gutter-x);
+  max-width: 13.5rem;
+  gap: 3rem;
 }
 
 .image-container a {
@@ -110,7 +110,7 @@ hr {
 }
 
 .image-container a:hover {
-  transform: scale(1.2);
+  transform: scale(1.15);
   z-index: 1;
 }
 
@@ -149,8 +149,8 @@ footer {
 
 @media all and (min-width: 48rem) {
   .image-container {
-      max-width: unset;
-    }
+    max-width: 35rem;
+  }
 }
 
 @media all and (min-width: 62rem) {
