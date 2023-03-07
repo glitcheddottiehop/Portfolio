@@ -51,6 +51,11 @@ p {
   color: white;
 }
 
+.divider-title {
+  color: black;
+  font-weight: bold;
+}
+
 .blockquote-footer {
   font-size: 1.25rem;
 }
@@ -66,12 +71,20 @@ p {
   border-color: #b3e5fc;
 }
 
-hr {
+.special {
   border: 3px solid #C402BB;
   margin: 20px auto;
   color: #F05F44;
   max-width: 65px;
   opacity: 1;
+}
+
+hr {
+  margin: 0 0;
+}
+
+.projects {
+  padding-left: 16px;
 }
 
 .blockquote-footer {
