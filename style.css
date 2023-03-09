@@ -133,10 +133,6 @@ hr {
   z-index: 1;
 }
 
-.image-container a:hover .image {
-  backdrop-filter: blur(2px);
-}
-
 .image {
   width: 100%;
 }
