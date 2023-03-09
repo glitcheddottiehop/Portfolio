@@ -112,7 +112,13 @@ hr {
   box-shadow: 0px 12px 8px rgba(0, 0, 0, 0.5);
 }
 
-.image-container {
+.top-projects {
+  border-radius: 16px;  
+  background: linear-gradient(rgb(73, 3, 134, 1), rgb(73, 3, 134, 0));
+  color: white;
+}
+
+.image-container, .all-projects .image-container {
   max-width: 13.5rem;
   gap: 3rem;
 }
@@ -125,10 +131,6 @@ hr {
 .image-container a:hover {
   transform: scale(1.15);
   z-index: 1;
-}
-
-.image-container a:hover .image {
-  backdrop-filter: blur(2px);
 }
 
 .image {
@@ -163,6 +165,11 @@ footer {
 @media all and (min-width: 48rem) {
   .image-container {
     max-width: 45rem;
+  }
+
+  .all-projects .image-container {
+    max-width: 60rem;
+    gap: 1rem;
   }
 }
 
