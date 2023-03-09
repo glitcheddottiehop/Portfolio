@@ -117,6 +117,8 @@ hr {
   background: linear-gradient(rgb(73, 3, 134, 1), rgb(73, 3, 134, 0));
   color: white;
 }
+
+.image-container, .all-projects .image-container {
   max-width: 13.5rem;
   gap: 3rem;
 }
@@ -167,6 +169,11 @@ footer {
 @media all and (min-width: 48rem) {
   .image-container {
     max-width: 45rem;
+  }
+
+  .all-projects .image-container {
+    max-width: 60rem;
+    gap: 1rem;
   }
 }
 
