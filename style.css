@@ -112,7 +112,11 @@ hr {
   box-shadow: 0px 12px 8px rgba(0, 0, 0, 0.5);
 }
 
-.image-container {
+.top-projects {
+  border-radius: 16px;  
+  background: linear-gradient(rgb(73, 3, 134, 1), rgb(73, 3, 134, 0));
+  color: white;
+}
   max-width: 13.5rem;
   gap: 3rem;
 }
