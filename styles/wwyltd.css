@@ -1,0 +1,75 @@
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background:  linear-gradient(0deg, rgb(217, 0, 255) 0%, rgb(255, 233, 108) 50%, rgb(78, 72, 255) 100%);
+}
+
+body {
+  overflow: overlay;
+}
+
+h2 {
+    margin-top: unset;
+}
+
+.properties {
+    margin: 0 auto;
+}
+
+.page-title {
+    color: #06CF64;
+}
+
+.content-limiter {
+    max-width: 900px;
+    margin: 0 auto
+}
+
+.heading-spacer {
+    padding-top: 8rem;
+}
+
+.accordion {
+    position: fixed;
+    top: 4rem;
+}
+
+.prototype-text {
+    display: none;
+}
+
+.scrollable-menu {
+    height: 66%;
+    max-height: 100%;
+    overflow-x: hidden;
+}
+
+.page-title {
+    color: #8669fb;
+}
+
+@media all and (max-width: 37.5rem) {
+    .column-list {
+        display: block;
+    }
+}
+
+@media all and (max-width: 43.75rem) {
+    iframe {
+        display: none;
+    }
+
+    .prototype-text {
+        display: block;
+    }
+}
