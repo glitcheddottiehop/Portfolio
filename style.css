@@ -1,6 +1,9 @@
-/* width */
+:root {
+  --border-radius: 16px;
+}
+
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 10px;
 }
 
 /* Track */
@@ -11,7 +14,8 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background:  linear-gradient(0deg, rgb(217, 0, 255) 0%, rgb(255, 233, 108) 50%, rgb(78, 72, 255) 100%);
+  background: #ff01ba; 
+  
 }
 
 body {
