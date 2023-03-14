@@ -136,11 +136,27 @@ hr {
   border-radius: var(--border-radius);
   margin-left: 1rem;
   margin-right: 1rem;
-  background: linear-gradient(rgb(73, 3, 134, 1), rgb(73, 3, 134, 0));
+  background: linear-gradient(#490387, rgb(73, 3, 134, 0));
   color: white;
 }
 
-.image-container, .all-projects .image-container {
+.all-projects {
+  border-radius: var(--border-radius);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background: linear-gradient(  rgb(54, 25, 150), rgb(73, 3, 134, 0));
+  
+}
+
+.title-top-projects {
+  font-size: 2.5rem;
+}
+
+.title-all-projects{
+ color: #ffffff;
+}
+
+.image-container, .all-projects .image-container-all {
   max-width: 13.5rem;
   gap: 3rem;
 }
@@ -189,7 +205,7 @@ footer {
     max-width: 45rem;
   }
 
-  .all-projects .image-container {
+  .all-projects .image-container-all {
     max-width: 60rem;
     gap: 1rem;
   }
