@@ -108,8 +108,12 @@ hr {
 }
 
 .about-me {
-  background-color: #f9a5fd;
+  background-image: url("/img/bio.jpg");
+  background-repeat: no-repeat;
+  background-size: 101% 100%;
   box-shadow: 0px 12px 8px rgba(0, 0, 0, 0.5);
+  border-radius: var(--border-radius);
+}
 
 .avatar {
   float: left;
