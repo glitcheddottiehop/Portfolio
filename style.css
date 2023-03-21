@@ -145,7 +145,16 @@ hr {
   margin-left: 1rem;
   margin-right: 1rem;
   background: linear-gradient(  rgb(54, 25, 150), rgb(73, 3, 134, 0));
-  
+}
+
+.all-projects img {
+  filter: grayscale();
+  transition: .35s;
+}
+
+.all-projects img:hover {
+  filter: grayscale(0%);
+  transition: .35s;
 }
 
 .title-top-projects {
