@@ -34,6 +34,19 @@ html {
   background-size: cover;
 }
 
+#top {
+  display: none;
+  position: fixed;
+  bottom: 8.75rem;
+  right: 1.875rem;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 5.625rem;
+  filter: drop-shadow(0px 0px 6px rgba(151, 71, 255, 0.25));
+}
+
 .navbar {
   font-size: 1.5rem;
 }

@@ -1,16 +1,12 @@
+/**
+ * Send an email from modal
+ */
 const exampleModal = document.getElementById('exampleModalToggle2')
 exampleModal.addEventListener('show.bs.modal', event => {
-  // Button that triggered the modal
   const button = event.relatedTarget
-  // Extract info from data-bs-* attributes
   const recipient = button.getAttribute('data-bs-whatever')
-  // If necessary, you could initiate an AJAX request here
-  // and then do the updating in a callback.
-  //
-  // Update the modal's content.
   const modalTitle = exampleModal.querySelector('.modal-title')
   const modalBodyInput = exampleModal.querySelector('.modal-body input')
-
   modalTitle.textContent = `New message to ${recipient}`
   modalBodyInput.value = recipient
 })
@@ -27,4 +23,26 @@ function reset_form(){
   const recipient = form.recipient.value;
   document.getElementById("my_form").reset();
   document.getElementById("my_form").recipient.value = "Santa";
+}
+
+/**
+ * Go to top function
+ */
+let mybutton = document.getElementById("top");
+
+window.onscroll = function() {scrollFunction()};
+
+// When the user scrolls down 20px from the top of the document, show the button
+function scrollFunction() {
+  if ((document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) && screen.width > 768) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
